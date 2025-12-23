@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ClinicVet.Core.Api.Http" Version="1.1.2" />
+    <PackageReference Include="ClinicVet.Core.Domain" Version="1.1.2" />
+    <PackageReference Include="ClinicVet.Core.Infra.Data.OracleSql" Version="1.1.2" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ClinicVet.PetCare.Infra.Data.Oracle\ClinicVet.PetCare.Infra.Data.Oracle.csproj" />
+    <ProjectReference Include="..\ClinicVet.PetCare.Infra.Data.Queries\ClinicVet.PetCare.Infra.Data.Queries.csproj" />
+  </ItemGroup>
+
+</Project>

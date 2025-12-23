@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ClinicVet.Core.Api.Http" Version="1.1.5" />
+    <PackageReference Include="ClinicVet.Core.Domain" Version="1.1.5" />
+    <PackageReference Include="ClinicVet.Core.Infra.Services.Http" Version="1.1.5" />
+    <PackageReference Include="Microsoft.Extensions.Caching.StackExchangeRedis" Version="9.0.5" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ClinicVet.PetCare.Bff.Domain\ClinicVet.PetCare.Domain.csproj" />
+    <ProjectReference Include="..\ClinicVet.PetCare.Infra.Data.Services\ClinicVet.PetCare.Infra.Data.Services.csproj" />
+  </ItemGroup>
+
+</Project>

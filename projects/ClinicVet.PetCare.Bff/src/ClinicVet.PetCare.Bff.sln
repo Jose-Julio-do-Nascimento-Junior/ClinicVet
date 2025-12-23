@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36603.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClinicVet.PetCare.Bff", "ClinicVet.PetCare.Bff\ClinicVet.PetCare.Bff.csproj", "{0023E6F4-9D65-4855-9FB5-0E994AD7D582}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 - Presentation", "0 - Presentation", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Domain", "1 - Domain", "{F63CECCF-4763-4235-946A-269EAF9718D9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Infrastructure", "2 - Infrastructure", "{DF26852A-74AC-4406-AC15-3DF48DB4EB5F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Tests", "3 - Tests", "{11818208-DCE8-48C9-B51C-91996E823DEB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClinicVet.PetCare.Domain", "ClinicVet.PetCare.Bff.Domain\ClinicVet.PetCare.Domain.csproj", "{3F8ADA9F-323C-4D0F-93C9-377505AE1059}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClinicVet.PetCare.Infra.Data.Services", "ClinicVet.PetCare.Infra.Data.Services\ClinicVet.PetCare.Infra.Data.Services.csproj", "{3A338ABB-735D-4AE8-8FA7-658FF3DF0772}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClinicVet.PetCare.UnitTests", "ClinicVet.PetCare.UnitTests\ClinicVet.PetCare.UnitTests.csproj", "{FEB9BDCB-E27A-40E5-8E20-122FF0265BFF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0023E6F4-9D65-4855-9FB5-0E994AD7D582}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0023E6F4-9D65-4855-9FB5-0E994AD7D582}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0023E6F4-9D65-4855-9FB5-0E994AD7D582}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0023E6F4-9D65-4855-9FB5-0E994AD7D582}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F8ADA9F-323C-4D0F-93C9-377505AE1059}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F8ADA9F-323C-4D0F-93C9-377505AE1059}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F8ADA9F-323C-4D0F-93C9-377505AE1059}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F8ADA9F-323C-4D0F-93C9-377505AE1059}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A338ABB-735D-4AE8-8FA7-658FF3DF0772}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A338ABB-735D-4AE8-8FA7-658FF3DF0772}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A338ABB-735D-4AE8-8FA7-658FF3DF0772}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A338ABB-735D-4AE8-8FA7-658FF3DF0772}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEB9BDCB-E27A-40E5-8E20-122FF0265BFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEB9BDCB-E27A-40E5-8E20-122FF0265BFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEB9BDCB-E27A-40E5-8E20-122FF0265BFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEB9BDCB-E27A-40E5-8E20-122FF0265BFF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0023E6F4-9D65-4855-9FB5-0E994AD7D582} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{3F8ADA9F-323C-4D0F-93C9-377505AE1059} = {F63CECCF-4763-4235-946A-269EAF9718D9}
+		{3A338ABB-735D-4AE8-8FA7-658FF3DF0772} = {DF26852A-74AC-4406-AC15-3DF48DB4EB5F}
+		{FEB9BDCB-E27A-40E5-8E20-122FF0265BFF} = {11818208-DCE8-48C9-B51C-91996E823DEB}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E0559D02-3E76-4131-ABCE-6FB37989852F}
+	EndGlobalSection
+EndGlobal

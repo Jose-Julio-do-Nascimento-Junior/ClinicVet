@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ClinicVet.Core.Domain" Version="1.1.2" />
+    <PackageReference Include="ClinicVet.Core.Infra.Data.OracleSql" Version="1.1.2" />
+    <PackageReference Include="Quartz" Version="3.14.0" />
+    <PackageReference Include="Quartz.Extensions.Hosting" Version="3.14.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ClinicVet.PetManager.Job.Domain\ClinicVet.PetManager.Job.Domain.csproj" />
+    <ProjectReference Include="..\ClinicVet.PetManager.Job.Infra.Data.Oracle\ClinicVet.PetManager.Job.Infra.Data.Oracle.csproj" />
+    <ProjectReference Include="..\ClinicVet.PetManager.Job.Infra.Data.Services\ClinicVet.PetManager.Job.Infra.Data.Services.csproj" />
+  </ItemGroup>
+
+</Project>

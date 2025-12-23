@@ -1,0 +1,35 @@
+﻿using ClinicVet.PetCare.Domain.Commands.v1.CreatePetOwner;
+using ClinicVet.PetCare.UniTests.Mock.Commands.v1.CreatePetOwner;
+using FluentValidation.Results;
+using Xunit;
+
+namespace ClinicVet.PetCare.UniTests.Units.Commands.v1.CreatePetOwner;
+
+public sealed class CreatePetOwnerCommandValidatorTests
+{
+    private static ValidationResult EstablishContext(CreatePetOwnerCommand command)
+    {
+        var validator = new CreatePetOwnerCommandValidator();
+        return validator.Validate(command);
+    }
+
+    [Fact(DisplayName = "Should be parameters valid")]
+    public void ShouldBeParametersValid()
+    {
+        var command = CreatePetOwnerCommandMock.GetDefaultInstance();
+
+        var result = EstablishContext(command);
+
+        Assert.True(result.IsValid);
+    }
+
+    [Fact(DisplayName = "Should be invalid parameters")]
+    public void ShouldBeInvalidParameters()
+    {
+        var command = CreatePetOwnerCommandMock.GetNullInstance();
+
+        var result = EstablishContext(command);
+
+        Assert.False(result.IsValid);
+    }
+}
